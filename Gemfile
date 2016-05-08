@@ -48,7 +48,6 @@ group :development do
   gem "capistrano-rails", :require => false
   gem "guard", ">= 2.2.2", :require => false
   gem "guard-livereload", :require => false
-  gem "guard-minitest", :require => false
   gem "rb-fsevent", :require => false
   gem "simplecov", :require => false
   gem "sshkit", "~> 1.8", :require => false
@@ -61,10 +60,13 @@ group :test do
   gem "capybara"
   gem "connection_pool"
   gem "launchy"
-  gem "minitest-reporters"
   gem "mocha"
   gem "poltergeist"
   gem "shoulda-context"
   gem "shoulda-matchers", ">= 3.0.1"
   gem "test_after_commit"
+end
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
 end
