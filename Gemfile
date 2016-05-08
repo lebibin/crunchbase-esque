@@ -17,6 +17,7 @@ gem "secure_headers", "~> 3.0"
 gem "sidekiq"
 gem "sinatra", ">= 1.3.0", :require => false
 gem "turbolinks", ">= 2.5.2"
+gem "pundit"
 
 group :production, :staging do
   gem "postmark-rails"
