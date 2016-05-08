@@ -24,4 +24,20 @@ FactoryGirl.define do
     association :user, factory: :investor
     association :role, factory: :prospect
   end
+  factory :investor_single_company, class: UserRole do
+    association :user, factory: :investor
+    association :role, factory: :single_company
+  end
+  factory :investor_company_pipeline_access, class: UserRole do
+    association :user, factory: :investor
+    association :role, factory: :company_pipeline_access
+  end
+  factory :investor_full_access, class: UserRole do
+    association :user, factory: :investor
+    association :role, factory: :full_access
+  end
+  factory :investor_admin, class: UserRole do
+    association :user, factory: :investor
+    association :role, factory: :admin
+  end
 end
