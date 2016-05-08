@@ -48,6 +48,7 @@ group :development do
   gem "capistrano-rails", :require => false
   gem "guard", ">= 2.2.2", :require => false
   gem "guard-livereload", :require => false
+  gem 'guard-rspec', require: false
   gem "rb-fsevent", :require => false
   gem "simplecov", :require => false
   gem "sshkit", "~> 1.8", :require => false
