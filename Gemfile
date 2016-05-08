@@ -65,6 +65,7 @@ group :test do
   gem "shoulda-context"
   gem "shoulda-matchers", ">= 3.0.1"
   gem "test_after_commit"
+  gem 'factory_girl_rails'
 end
 
 group :development, :test do
