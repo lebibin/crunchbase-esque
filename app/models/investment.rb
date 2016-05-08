@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: companies
+# Table name: investments
 #
 #  created_at :datetime         not null
 #  id         :integer          not null, primary key
@@ -8,5 +8,5 @@
 #  updated_at :datetime         not null
 #
 
-class Company < ActiveRecord::Base
+class Investment < ActiveRecord::Base
 end
