@@ -18,4 +18,7 @@ class User < ActiveRecord::Base
 
   enum type: TYPES
 
+  has_many :user_roles
+  has_many :roles, through: :user_roles
+
 end
